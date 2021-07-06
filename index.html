@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <form id="survey-form">
+    <header id="header">
+      <h1 id='title'>freeCodeCamp Survey Form </h1>
+      <p id="description"> <i>Thank you for taking the time to help us improve the platform</i></p>
+    </header>
+
+    <div class="form-group">
+      <label for="name" id="name-label">Name</label>
+      <input type="text" class="form-control" id="name" aria-describedby="nameHelp" placeholder="Enter Full Name"
+        required>
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-group">
+      <label for="email" id="email-label">Email address</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email"
+        required>
+      <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->
+    </div>
+    <div class="form-group">
+      <label for="number" id="number-label">Age</label>
+      <input type="number" class="form-control" id="number" min="1" max='99' placeholder="Enter your Age">
+    </div>
+
+    <div class="form-group">
+      <label for="dropdown" id="name-label">What is your favorite feature of freeCodeCamp?</label>
+      <select type="text" class="form-control" id="dropdown" data-toggle="dropdown" aria-haspopup="true"
+        aria-expanded="false" required>
+        <!-- <div class="dropdown-menu"> -->
+        <option class="dropdown-item" disabled selected href="#">Select an option</option>
+        <option class="dropdown-item" href="#">Challenges</option>
+        <option class="dropdown-item" href="#">Projects</option>
+        <option class="dropdown-item" href="#">Community</option>
+        <!-- </div> -->
+      </select>
+    </div>
+
+    <div class="form-group" id="recommend">
+      <label for="recommend" id="recommend-label">Would you recommend freeCodeCamp to a
+        friend?</label>
+
+      <div class="recommend1-wrap">
+        <input type="radio" id="recommend1" name="recommend" value="definitely">
+        <label for="recommend1">Definitely</label>
+      </div>
+
+      <div class="recommend2-wrap">
+        <input type="radio" id="recommend2" name="recommend" value="maybe">
+        <label for="recommend2">Maybe</label>
+      </div>
+
+      <div class="recommend3-wrap">
+        <input type="radio" id="recommend3" name="recommend" value="no">
+        <label for="recommend3">No</label>
+      </div>
+
+    </div>
+
+
+    <div class="form-group" id="improvement">
+      <label for="improvement">What would you like to see improved? <small>(Check all that apply)</small></label>
+
+      <label>
+        <input name="improve" value="front-end-projects" type="checkbox">
+        Front-end Projects
+      </label>
+
+      <label>
+        <input name="improve" value="back-end-projects" type="checkbox">
+        Back-end Projects
+      </label>
+
+      <label>
+        <input name="improve" value="data-visualization" type="checkbox">
+        Data Visualization
+      </label>
+
+      <label>
+        <input name="improve" value="challenges" type="checkbox">
+        Challenges
+      </label>
+
+      <label>
+        <input name="improve" value="open-source-community" type="checkbox">
+        Open Source Community
+      </label>
+
+      <label>
+        <input name="improve" value="gitter-help-rooms" type="checkbox">
+        Gitter help rooms
+      </label>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">
+        Any comments or suggestions?
+      </label>
+      <textarea name="comments" class="form-control" id="comments" placeholder="Enter comments here"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+  </form>
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
